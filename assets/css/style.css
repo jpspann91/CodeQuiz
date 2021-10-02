@@ -1,0 +1,47 @@
+.wrapper{
+    position: absolute;
+    top: 20%;
+    width:500px;
+    height: 500px;
+    left: 30%;
+    border: 1px solid coral;
+}
+#start{
+    background-color: coral;
+    margin-left: 33%;
+    color:darkblue;
+    padding: 15px 30px;
+    font-size: 22px;
+}
+#questions{
+    margin: 22px;
+}
+#currentTime{
+    float: right;
+}
+button{
+    border-radius: 10px;
+}
+textarea{
+    width: 90%;
+    margin: 22px;
+}
+label{
+    margin-right: 10px;
+}
+input{
+    margin-bottom: 22px;
+    width: 50%;
+    border: 1px solid slategrey;
+}
+h1{
+    text-align: center;
+}
+li{
+    background-color: coral;
+    margin-top: 10px;
+    width: 80%;
+    color: darkblue;
+    font-size: 18px;
+    padding: 5px 16px;
+}
