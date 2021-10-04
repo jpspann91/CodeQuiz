@@ -72,7 +72,7 @@ function createQuestion(questionIndex){
         var usersQuestion = questionObjectArray[questionIndex].question;
         var usersChoices = questionObjectArray[questionIndex].choices;
         questionsEl.textContent = usersQuestion;
-
+        questionsEl.setAttribute("style", "color: greenyellow; font-size: 18px;")
         
     }
 
@@ -171,18 +171,21 @@ function finished(){
                 score: timeRemaining
             }
             console.log(finalScore);
-            var allScores = localStorage.getItem("allScores");
-            if(allScores === null){
-                allScores = [];
+            var allScoresKey = localStorage.getItem("allScoresKey");
+            if(allScoresKey === null){
+                allScoresKey = [];
             }
             else{
-                allScores = JSON.parse(allScores);
+                allScoresKey = JSON.parse(allScoresKey);
             }
-            allScores.push(finalScore);
-            var newestScore = JSON.stringify(allScores);
-            localStorage.setItem("allScores", newestScore);
+            
+            allScoresKey.push(finalScore);
 
-            window.location.replace("");
+            var newestScore = JSON.stringify(allScoresKey);
+
+            localStorage.setItem("allScoresKey", newestScore);
+
+            window.location.replace("./highScorePage.html");
         }
 
     });
