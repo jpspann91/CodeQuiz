@@ -27,7 +27,7 @@ textarea{
     margin: 22px;
 }
 label{
-    margin-right: 10px;
+    margin-right: 12px;
 }
 input{
     margin-bottom: 22px;
@@ -45,4 +45,17 @@ li{
     font-size: 18px;
     padding: 5px 16px;
 }
+#createdDivEl {
+    margin-top: 20px;
+    border-top: 1px solid lightgray;
+}
+#Submit{
+    background-color: coral;
+    margin-left: 33%;
+    padding: 16px 30px;
+    color: white;
+    font-size: 21px;
+}
+
+
 
