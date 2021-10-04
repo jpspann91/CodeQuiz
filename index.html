@@ -1,33 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!--Meta information for the page-->
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Link CSS style sheet-->
     <link rel="stylesheet" href="./assets/css/style.css"/>
+    <!--Title-->
     <title>Code Quiz</title>
 
 </head>
-
+<!--Body of the entire page-->
 <body>
+    <!--Anchor tag with a link to the High Score Page-->
     <a href="highScorePage.html">View HighScores</a>
+    <!--Main section with wrapper class-->
     <main class="wrapper">
+        <!--Current time Div holds the time remaining-->
         <div id="currentTime"></div>
+        <!--div to hold the question objects we will create-->
         <div id="questions">
+            <!--Header-->
             <h1>Coding Quiz Questions</h1>
             
+            <!--Paragraph to explain the game-->
             <p>Answer the following questions 
                 within the time given. Incorrect 
                 answers will penalize your 
                 score/time by 10 seconds
             </p>
             
+            <!--Unordered list to hold the choices to pick from-->
             <ul id="choicesList"></ul>
 
+            <!--Button to start the quiz-->
             <button id="start">Start Quiz</button>
         
         </div>
-
+        <!--Import our Javascript file-->
         <script src="./assets/js/script.js"></script>
 
     </main>

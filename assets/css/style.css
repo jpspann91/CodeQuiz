@@ -1,3 +1,4 @@
+/*Wrapper class for the Quiz box*/
 .wrapper{
     position: absolute;
     top: 20%;
@@ -7,6 +8,7 @@
     border: 1px solid coral;
     background-color: steelblue;
 }
+/*ID Selector Properties for start button*/
 #start{
     background-color: coral;
     margin-left: 33%;
@@ -14,33 +16,36 @@
     padding: 15px 30px;
     font-size: 22px;
 }
+/*ID Selector Properties for questions div element*/
 #questions{
     margin: 22px;
 }
+/*ID Selector Propeties for current time element*/
 #currentTime{
     float: right;
     color: greenyellow;
     font-size: 22px;
 }
+/*Give border radius to all button elements*/
 button{
     border-radius: 10px;
 }
-textarea{
-    width: 90%;
-    margin: 22px;
-}
+/*Give margin to all label elements*/
 label{
     margin-right: 12px;
 }
+/*Element selector properties for input elements*/
 input{
     margin-bottom: 22px;
     width: 50%;
     border: 1px solid slategrey;
 }
+/*Element selectors for all h1 elements*/
 h1{
     text-align: center;
     color:coral;
 }
+/*Element selectors for all li elements*/
 li{
     background-color: coral;
     margin-top: 10px;
@@ -49,19 +54,23 @@ li{
     font-size: 18px;
     padding: 5px 16px;
 }
+/*Element selectors for all paragraph elements*/
 p{ 
     color: greenyellow;
     font-family: monospace, 'Courier New', Courier, monospace;
     text-align: center;
 
 }
+/*Element selectors for all ul elements*/
 ul{
     list-style: none;
 }
+/*ID Selector for Div elements create with JS*/
 #createdDivEl {
     margin-top: 20px;
     border-top: 1px solid lightgray;
 }
+/*ID Selector for Submit button created with JS*/
 #Submit{
     background-color: coral;
     margin-left: 33%;
@@ -69,6 +78,7 @@ ul{
     color: white;
     font-size: 21px;
 }
+/*ID Selector for go back button*/
 #goBackBtn{
     background-color: coral;
     text-decoration: none;
@@ -80,6 +90,7 @@ ul{
     width: auto;
 
 }
+/*ID Selector for the clear button*/
 #clearBtn{
     background-color: coral;
     text-decoration: none;
@@ -90,10 +101,42 @@ ul{
     color: darkblue;
     width: auto;
 }
+/*ID Selector for div that holds the high scores button*/
 #highScoreBtns{
     display: flex;
     justify-content: space-evenly;
 }
 
 
+
+@media screen and (wax-width: 786px){
+    body {
+        max-width: 786px;
+
+    }
+    #wrapper{
+        position: absolute;
+        left: 15%;
+        float: left;
+    
+    }
+    a{
+        margin-left: 18%;
+    }
+    #highScoreBtns{
+        justify-content: flex-start;
+    }
+}
+@media screen and (max-width: 580px){
+    body{
+        min-width: 580px;
+    }
+    #wrapper{
+        position: absolute;
+        left: 10%;
+    }
+    a{
+        margin-left: 10%;
+    }
+}
 

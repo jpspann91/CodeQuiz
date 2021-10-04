@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!--Meta information for the page-->
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!--link up the CSS-->
         <link rel="stylesheet" href="assets/css/style.css">
+        <!--Title for the page-->
         <title>Code Quiz</title>
     </head>
 
     <body>
+        <!--main element with wrapper class-->
         <main class="wrapper">
+            <!--Holds current time-->
             <div id="currentTime"></div>
+            <!--Copied from index.html used to clear out section-->
             <div id="questions">
                 <h1>High Scores</h1>
+                <!--Unordered list to hold the highscores-->
                 <ul id="highScores"></ul>
-
+                <!--Div to hold the buttons-->
                 <div id="highScoreBtns">
+                    <!--Go Back Button-->
                     <button id="goBackBtn">Go Back</button>
+                    <!--Clear Button-->
                     <button id="clearBtn" value="reset">Clear HighScores</button>
                 </div>
             </div>
 
         </main>
+        <!--Link to  High Score Page-->
         <script src="./assets/js/highScorePage.js"></script>
     </body>
 </html>
