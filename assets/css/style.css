@@ -107,36 +107,39 @@ ul{
     justify-content: space-evenly;
 }
 
-
-
-@media screen and (wax-width: 786px){
-    body {
-        max-width: 786px;
-
+/*@media query at 900 px*/
+@media screen and (max-width: 900px){
+    /*set bodys max width to 900px*/
+    body{
+        min-width: 900px;
     }
-    #wrapper{
+    /*make wraper absolute and push to the left*/
+    .wrapper{
         position: absolute;
-        left: 15%;
-        float: left;
-    
-    }
-    a{
-        margin-left: 18%;
-    }
-    #highScoreBtns{
-        justify-content: flex-start;
+        left: 20%;
     }
 }
-@media screen and (max-width: 580px){
-    body{
-        min-width: 580px;
+/*Media query when screen is at 750px*/
+@media screen and (wax-width: 775px){
+    body {
+        max-width: 775px;
+
     }
-    #wrapper{
+    /*change wrapper class element */
+    .wrapper{
         position: absolute;
         left: 10%;
+    
     }
-    a{
-        margin-left: 10%;
+}
+/*Media query for screen at 600px*/
+@media screen and (max-width: 550px){
+    body{
+        min-width: 550px;
+    }
+    .wrapper{
+        position: absolute;
+        left: 0%;
     }
 }
 

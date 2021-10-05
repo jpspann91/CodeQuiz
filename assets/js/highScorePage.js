@@ -36,7 +36,7 @@ if(allScoresKey !== null){
         //changes the text content to be the initials and score properties 
         //held in allScoresKey object
         createLiEl.textContent = allScoresKey[i].initials + " " + allScoresKey[i].score;
-        //append the list ite, created to the highScores div element
+        //append the list item, created to the highScores div element
         highScoreEl.appendChild(createLiEl);
     }
 

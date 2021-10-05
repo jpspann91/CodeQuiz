@@ -251,8 +251,7 @@ function finished(){
                 //Set score property to the timeRemaining value
                 score: timeRemaining
             }
-            //Call console.log function and pass in finalScore object
-            console.log(finalScore);
+            
             //call getItem function to grab allScoresKey and set to a variable
             var allScoresKey = localStorage.getItem("allScoresKey");
             
