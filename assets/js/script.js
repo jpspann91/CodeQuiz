@@ -240,8 +240,8 @@ function finished(){
 
         //If the initials are null
         if (initials === null){
-            //Adv that they need to enter a value
-           alert("No value entered!");
+            //consol log that no initials were entered
+           console.log("No initials entered")
         }
         else{
             //Create a finalScore object with 2 properties
